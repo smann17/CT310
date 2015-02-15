@@ -15,7 +15,17 @@
 	</div>
 
 	<div class="contents">
-	<img id="profile picture">
+		<img id="profile picture">
+		<p>Summary and Interests:</p>
+		<?php
+		$myfile = fopen("Profile1.txt", "r") or die("Unable to open file!");
+		echo fread($myfile,filesize("Profile1.txt"));
+		fclose($myfile);
+		?> 
+
+
+	
+
 	</div>
 	
 	<div class="footer">
