@@ -1,3 +1,4 @@
+<!--Group 5, Wally, Kyle, & Sean-->
 <!DOCTYPE html>
 
 <html>
@@ -11,16 +12,17 @@
 	</head>
 	<body>
 		<?php
-			/*print_r($_SERVER["REMOTE_ADDR"]);*/
+			print_r($_SERVER["REMOTE_ADDR"]);
 			$ip = $_SERVER["REMOTE_ADDR"];
 			$ipArray = explode(".", $ip);
 			//print "This is our array";
-			//print_r($ipArray);
-			if ($ipArray[0]==129 && $ipArray[1]==82){}
+			print_r($ipArray);
+			if (($ipArray[0]==129 && $ipArray[1]==82)||($ipArray[0]==10 && $ipArray[1]==84));
+			else exit("Invalid IP address");
 		?>
 			<header>
-				<a class="#">Home</a>
-				<a class="#">Profile 1</a>
+				<a href="#">Home</a>
+				<a href="Profile.php">Profile 1</a>
 			</header>
 			<div class="left">
 				<h1>Description</h1>
@@ -45,7 +47,7 @@
 			<div class="right">
 				<h2>Users</h2>
 				<ul>
-					<li>Profile 1</li>
+					<li><a href="Profile.php">Profile 1</a></li>
 					<li>Profile 2</li>
 				</ul>
 			</div>

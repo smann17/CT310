@@ -1,6 +1,6 @@
+<!--Group 5, Wally, Kyle, & Sean-->
 <!DOCTYPE html>
 <html>
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="description" content="Project 1 profile page">
@@ -8,10 +8,10 @@
 	<meta name="author" content="Kyle Kurth">
 	<title>Profile</title>
 </head>
-	
+
 <body>
 	<div class="header">
-	
+		
 	</div>
 
 	<div class="contents">
@@ -22,14 +22,9 @@
 		echo fread($myfile,filesize("Profile1.txt"));
 		fclose($myfile);
 		?> 
-
-
-	
-
 	</div>
-	
 	<div class="footer">
-	
+
 	</div>
 </body>
 
