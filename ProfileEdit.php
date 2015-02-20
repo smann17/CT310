@@ -1,6 +1,6 @@
-<!--Group 5, Wally, Kyle, & Sean-->
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="description" content="Project 1 profile page">
@@ -8,27 +8,43 @@
 	<meta name="author" content="Kyle Kurth">
 	<title>Profile</title>
 </head>
-
+	
 <body>
 	<div class="header">
-		
+	
 	</div>
 
 	<div class="contents">
 		<img id="profile picture">
 		<p>Summary and Interests:</p>
-		<?php
+		
+		<form method="POST" action="<?php
+			if(isset($_POST['button'])) { 
+				$a = $_POST['content'];
+				$myFile = "Profile1.txt";
+				$fh = fopen($myFile, 'w') or die("can't open file");
+				fwrite($fh, $a);
+				fclose($fh);
+			}
+		?>">
+		<textarea name="content" rows="5" cols="40"><?php
 		$myfile = fopen("Profile1.txt", "r") or die("Unable to open file!");
 		echo fread($myfile,filesize("Profile1.txt"));
 		fclose($myfile);
-		?> 
-		
-		<form method="POST" action="ProfileEdit.php">
-			<input type="submit" value="Edit">
+		?> </textarea><br/>
+	
+		<input name="button" type="submit" value="Save Changes">
+	
 		</form>
-	</div>
-	<div class="footer">
+		
+		<form method="POST" action="Profile.php">
+			<input type="submit" value="Return to Profile">
+		</form>
 
+	</div>
+	
+	<div class="footer">
+	
 	</div>
 </body>
 
