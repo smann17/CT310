@@ -63,3 +63,8 @@ div.clear {
     clear: both;
 
 }
+div.right img{
+    /*float: left;*/
+    height: 75px;
+    width: 75px;
+}

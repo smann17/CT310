@@ -20,10 +20,7 @@
 			if (($ipArray[0]==129 && $ipArray[1]==82)||($ipArray[0]==10 && $ipArray[1]==84));
 			else exit("Invalid IP address");
 		?>
-			<header>
-				<a href="#">Home</a>
-				<a href="Profile.php">Profile 1</a>
-			</header>
+			<?php include 'header.php';?>
 			<div class="left">
 				<h1>Description</h1>
 				<p> 
@@ -47,14 +44,15 @@
 			<div class="right">
 				<h2>Users</h2>
 				<ul>
-					<li><a href="Profile.php">Profile 1</a></li>
-					<li>Profile 2</li>
+					<li><a href="Profile.php"><img src="Sean.jpg" alt="Picture of Sean Mann"></a>Profile 1</li>
+					<li><a href="Profile.php"><img src="DastardlySean.jpg" alt="Picture of Dastardly Sean Mann"></a>Profile 2</li>
 				</ul>
 			</div>
 			<div class="clear"></div>
-			<footer>
+			<?php include 'footer.php';?>
+			<!--<footer>
 				<p>Group 5: Kyle, Wally, and Sean</p>
-			</footer>
+			</footer>-->
 		
 	</body>
 
