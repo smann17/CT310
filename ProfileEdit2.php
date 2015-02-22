@@ -23,9 +23,10 @@
 				}
 				$a = $_POST['content'];
 				$filtered = filter_var($a, FILTER_SANITIZE_STRING);
+				$trimmed = trim($filtered);
 				$myFile = "ProfileInfo2.txt";
 				$fh = fopen($myFile, 'w') or die("can't open file");
-				fwrite($fh, $filtered);
+				fwrite($fh, $trimmed);
 				fclose($fh);
 			}
 		?>">

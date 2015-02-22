@@ -15,19 +15,18 @@
 	<?php include 'header.php';?>
 	<div class="contents">
 		<img id="profile picture" src="DastardlySean.jpg" alt="Profile Picture">
+		<div id= "clear"></div>
 		<h3>Summary and Interests:</h3>
 		<?php
 		$myfile = fopen("ProfileInfo2.txt", "r") or die("Unable to open file!");
 		echo fread($myfile,filesize("ProfileInfo2.txt"));
 		fclose($myfile);
 		?> 
-		
 		<form method="POST" action="ProfileEdit2.php">
 			<input type="submit" value="Edit">
 		</form>
 	</div>
 	<?php include 'footer.php';?>
-
 </body>
 
 

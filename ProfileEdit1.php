@@ -23,16 +23,17 @@
 				}
 				$a = $_POST['content'];
 				$filtered = filter_var($a, FILTER_SANITIZE_STRING);
+				$trimmed = trim($filtered);
 				$myFile = "ProfileInfo1.txt";
 				$fh = fopen($myFile, 'w') or die("can't open file");
-				fwrite($fh, $filtered);
+				fwrite($fh, $trimmed);
 				fclose($fh);
 			}
 		?>">
 		<textarea name="content" rows="5" cols="40"><?php
 		$myfile = fopen("ProfileInfo1.txt", "r") or die("Unable to open file!");
 		if(filesize("ProfileInfo2.txt")>0){
-			echo fread($myfile,filesize("ProfileInfo2.txt"));
+			echo fread($myfile,filesize("ProfileInfo1.txt"));
 		}
 		fclose($myfile);
 		?> </textarea><br/>
