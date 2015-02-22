@@ -6,30 +6,28 @@
 	<meta name="description" content="Project 1 profile page">
 	<meta name="keywords" content="social networking, CS, web design">
 	<meta name="author" content="Kyle Kurth">
+	<link rel="stylesheet" type="text/css" href="styleSheet.css">
 	<title>Profile</title>
 </head>
 
 <body>
-	<div class="header">
-		
-	</div>
 
+	<?php include 'header.php';?>
 	<div class="contents">
-		<img id="profile picture">
-		<p>Summary and Interests:</p>
+		<img id="profile picture" src="DastardlySean.jpg" alt="Profile Picture">
+		<h3>Summary and Interests:</h3>
 		<?php
-		$myfile = fopen("Profile1.txt", "r") or die("Unable to open file!");
-		echo fread($myfile,filesize("Profile1.txt"));
+		$myfile = fopen("ProfileInfo2.txt", "r") or die("Unable to open file!");
+		echo fread($myfile,filesize("ProfileInfo2.txt"));
 		fclose($myfile);
 		?> 
 		
-		<form method="POST" action="ProfileEdit.php">
+		<form method="POST" action="ProfileEdit2.php">
 			<input type="submit" value="Edit">
 		</form>
 	</div>
-	<div class="footer">
+	<?php include 'footer.php';?>
 
-	</div>
 </body>
 
 
