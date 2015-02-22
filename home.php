@@ -11,15 +11,6 @@
 		<title>Welcome to our social media website</title>
 	</head>
 	<body>
-		<?php
-			//print_r($_SERVER["REMOTE_ADDR"]);
-			$ip = $_SERVER["REMOTE_ADDR"];
-			$ipArray = explode(".", $ip);
-			//print "This is our array";
-			//print_r($ipArray);
-			if (($ipArray[0]==129 && $ipArray[1]==82)||($ipArray[0]==10 && $ipArray[1]==84));
-			else exit("Invalid IP address");
-		?>
 			<?php include 'header.php';?>
 			<div class="left">
 				<h1>Description</h1>
@@ -50,10 +41,5 @@
 			</div>
 			<div class="clear"></div>
 			<?php include 'footer.php';?>
-			<!--<footer>
-				<p>Group 5: Kyle, Wally, and Sean</p>
-			</footer>-->
-		
 	</body>
-
 </html>

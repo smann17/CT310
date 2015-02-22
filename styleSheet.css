@@ -16,7 +16,7 @@ float: right;
 }
 
 header, footer{
-    background-color: #E8E8E8;
+    background-color: #CCFFCC;
     color: #BBB;
     border: 2px solid;
     border-radius: 25px;
@@ -27,7 +27,7 @@ footer {
     text-align:center;
     font-size: 12px;
     font-variant: small-caps;
-    color : black;
+    /*color : black;*/
     margin-top: 100px;
 }
 
