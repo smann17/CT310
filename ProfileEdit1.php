@@ -7,12 +7,13 @@
 	<meta name="keywords" content="social networking, CS, web design">
 	<meta name="author" content="Kyle Kurth">
 	<link rel="stylesheet" type="text/css" href="styleSheet.css">
-	<title>Profile</title>
+	<title>ProfileEdit</title>
 </head>
 	
 <body>
 	<?php include 'header.php';?>
 	<div class="contents">
+		<h2>Profile 1</h2>
 		<img id="profile picture" src="Sean.jpg" alt="Profile Picture">
 		<h3>Summary and Interests:</h3>
 		
@@ -39,7 +40,7 @@
 		?> </textarea><br/>
 	
 		<input name="button" type="submit" value="Save Changes">
-	
+		<p>Press Save Changes and then press Return to Profile</p>
 		</form>
 		
 		<form method="POST" action="Profile1.php">

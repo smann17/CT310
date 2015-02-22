@@ -7,13 +7,14 @@
 	<meta name="keywords" content="social networking, CS, web design">
 	<meta name="author" content="Kyle Kurth">
 	<link rel="stylesheet" type="text/css" href="styleSheet.css">
-	<title>Profile</title>
+	<title>Profile1</title>
 </head>
 
 <body>
 
 	<?php include 'header.php';?>
 	<div class="contents">
+		<h2>Profile 1</h2>
 		<img id="profile_image" src="Sean.jpg" alt="Profile Picture">
 		<div id= "clear"></div>
 		<h3>Summary and Interests:</h3>

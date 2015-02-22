@@ -7,12 +7,13 @@
 	<meta name="keywords" content="social networking, CS, web design">
 	<meta name="author" content="Kyle Kurth">
 	<link rel="stylesheet" type="text/css" href="styleSheet.css">
-	<title>Profile</title>
+	<title>ProfileEdit</title>
 </head>
 	
 <body>
 	<?php include 'header.php';?>
 	<div class="contents">
+		<h2>Profile 2</h2>
 		<img id="profile picture" src="DastardlySean.jpg" alt="Profile Picture">
 		<h3>Summary and Interests:</h3>
 		
@@ -41,6 +42,7 @@
 		<input name="button" type="submit" value="Save Changes">
 	
 		</form>
+		<p>Press Save Changes and then press Return to Profile</p>
 		
 		<form method="POST" action="Profile2.php">
 			<input type="submit" value="Return to Profile">

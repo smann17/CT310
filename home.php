@@ -12,6 +12,7 @@
 	</head>
 	<body>
 			<?php include 'header.php';?>
+		<div class="leftandright">
 			<div class="left">
 				<h1>Description</h1>
 				<p> 
@@ -40,6 +41,7 @@
 				</ul>
 			</div>
 			<div class="clear"></div>
+		</div>
 			<?php include 'footer.php';?>
 	</body>
 </html>
